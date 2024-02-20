@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wave-container {
+  height: 95vh;
+  background-color: #ff9a8b;
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+
+  position: relative;
+}
+
+.wave-container::before {
+  content: "";
+  width: 100%;
+  height: 72px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 81vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  104' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 76L50 72C100 67 200 58 300 39C400 20 500 -8 600 1C700 11 800 58 900 76C1000 95 1100 86 1150 81L1200 76V104H1150C1100 104 1000 104 900 104C800 104 700 104 600 104C500 104 400 104 300 104C200 104 100 104 50 104H0V76Z' fill='%23ffffff'/></svg>");
+}
+
+@media (max-width: 850px) {
+  .wave-container::before {
+    height: 36px;
+  }
+}
+
+.footer-wave-divider {
+  height: 100px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.footer-wave-divider::before {
+  content: "";
+  width: 100%;
+  height: 168px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 21vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 98L50 92C100 86 200 74 300 50C400 26 500 -10 600 2C700 14 800 74 900 98C1000 122 1100 110 1150 104L1200 98V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V98Z' fill='%23000b76'/></svg>");
+}
+
+@media (max-width: 850px) {
+  .footer-wave-divider::before {
+    height: 84px;
+  }
+}
+
+.bubble {
+  border-radius: 70px 70px 0 0;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    90deg,
+    #ff9a8b 0%,
+    #ff6a88 55%,
+    #ff99ac 100%
+  );
+}
+
+.gradient-2 {
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+
+footer {
+  background-color: #000b76;
+}
