@@ -21,21 +21,36 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="h-dvh bg-white">
+  <body class="h-dvh bg-white overflow-x-hidden">
     <!-- Navigation bar -->
-    <nav class="h-24 flex items-center justify-between lg:px-10 px-5">
+    <nav class="h-24 flex items-center justify-between md:px-10 px-5">
       <div class="h-full flex items-center">
         <img src="./assets//KSS.png" alt="" class="w-full h-4/5 object-fill" />
       </div>
-      <ul class="lg:flex hidden space-x-10 text-[1.12rem] mr-4">
+      <ul class="sm:flex hidden space-x-10 text-[1.12rem] mr-4">
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <div class="block lg:hidden cursor-pointer">
+      <div class="block sm:hidden cursor-pointer z-20" id="showMenu">
         <i class="fa-solid fa-bars fa-2xl"></i>
       </div>
+      <div class="hidden cursor-pointer z-20" id="hideMenu">
+        <i class="fa-solid fa-xmark fa-2xl"></i>
+      </div>
       <!-- Mobile navigation -->
+      <div
+        class="md:hidden absolute w-full h-full bg-red-100 top-0 left-0 translate-x-37 transition-transform duration-700 ease-in z-10"
+        id="mobileNav"
+      >
+        <ul
+          class="relative top-1/2 -translate-y-1/2 ml-10 space-y-6 font-josefin uppercase text-3xl"
+        >
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- Hero Section -->
     <section
@@ -267,7 +282,7 @@
       id="contact"
     >
       <div
-        class="w-full lg:w-1/3 h-1/2 flex flex-col justify-center items-center space-y-10 border-2 border-purple-500 shadow-xl rounded-3xl"
+        class="w-full lg:w-1/3 h-1/2 flex flex-col justify-center items-center space-y-10 border-2 border-purple-500 shadow-xl rounded-3xl p-3"
       >
         <h3 class="text-4xl">Get in Touch</h3>
         <div class="flex">
@@ -314,5 +329,7 @@
         />
       </div>
     </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
