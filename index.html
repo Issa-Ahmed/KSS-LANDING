@@ -27,16 +27,25 @@
       <div class="h-full flex items-center">
         <img src="./assets//KSS.png" alt="" class="w-full h-4/5 object-fill" />
       </div>
-      <ul class="flex space-x-10 text-[1.12rem] mr-4">
+      <ul class="lg:flex space-x-10 text-[1.12rem] mr-4 hidden">
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="cursor-pointer">
+        <i class="fa-solid fa-bars fa-2xl"></i>
+      </div>
+      <!-- Mobile navigation -->
     </nav>
     <!-- Hero Section -->
-    <section class="h-dvh flex items-center wave-container" id="home">
-      <div class="w-1/2 px-24 space-y-7 font-raleway text-white">
-        <h1 class="text-6xl tracking-wide leading-tight font-bold">
+    <section
+      class="h-dvh flex lg:flex-row flex-col items-center wave-container"
+      id="home"
+    >
+      <div
+        class="w-full md:w-1/2 px-10 md:px-24 space-y-7 font-raleway text-white text-center md:text-justify pt-12"
+      >
+        <h1 class="lg:text-6xl text-5xl tracking-wide leading-tight font-bold">
           Welcome to Kaafuura Secondary School education portal.
         </h1>
         <p class="text-lg">
@@ -51,7 +60,7 @@
           <a href="https://google.com" target="_blank"> Sign Up</a>
         </button>
       </div>
-      <div class="m-auto w-1/2 h-5/6">
+      <div class="m-auto w-1/2 h-4/6 md:h-5/6">
         <img
           src="./assets/undraw_reading_book_re_kqpk.svg"
           alt=""
@@ -61,17 +70,19 @@
     </section>
 
     <!-- Features section -->
-    <section class="h-5/6 my-20" id="features">
+    <section class="h-fit md:my-20 my-10" id="features">
       <div class="text-center space-y-3 pt-10">
-        <h2 class="text-5xl">Explore a few of the perks.</h2>
+        <h2 class="text-4xl md:text-5xl">Explore a few of the perks.</h2>
         <p>What our school management system aims to streamline.</p>
       </div>
-      <div class="grid grid-cols-4 gap-x-8 w-4/5 m-auto h-full items-center">
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:gap-x-8 gap-y-10 w-4/5 m-auto h-full items-center pt-10"
+      >
         <div
-          class="h-4/5 bg-gray-100 rounded-2xl shadow-xl flex flex-col items-center hover:scale-105 transition cursor-default"
+          class="h-fit p-3 md:p-7 bg-gray-100 rounded-2xl shadow-xl flex flex-col items-center hover:scale-105 transition cursor-default"
         >
           <div
-            class="h-1/3 w-full text-red-400 flex items-center justify-center text-8xl"
+            class="h-1/3 w-full text-red-400 flex items-center justify-center text-6xl md:text-8xl py-5"
           >
             <i class="fa-solid fa-school"></i>
           </div>
@@ -88,10 +99,10 @@
         </div>
 
         <div
-          class="h-4/5 bg-gray-100 rounded-2xl shadow-xl flex flex-col items-center hover:scale-105 transition cursor-default"
+          class="h-fit p-3 md:p-7 bg-gray-100 rounded-2xl shadow-xl flex flex-col items-center hover:scale-105 transition cursor-default"
         >
           <div
-            class="h-1/3 w-full text-red-400 flex items-center justify-center text-8xl"
+            class="h-1/3 w-full text-red-400 flex items-center justify-center text-6xl md:text-8xl py-5"
           >
             <i class="fa-solid fa-graduation-cap"></i>
           </div>
@@ -106,10 +117,10 @@
           </div>
         </div>
         <div
-          class="h-4/5 bg-gray-100 rounded-2xl shadow-xl flex flex-col items-center hover:scale-105 transition cursor-default"
+          class="h-fit p-3 md:p-7 bg-gray-100 rounded-2xl shadow-xl flex flex-col items-center hover:scale-105 transition cursor-default"
         >
           <div
-            class="h-1/3 w-full text-red-400 flex items-center justify-center text-8xl"
+            class="h-1/3 w-full text-red-400 flex items-center justify-center text-6xl md:text-8xl py-5"
           >
             <i class="fa-solid fa-people-arrows"></i>
           </div>
@@ -124,10 +135,10 @@
           </div>
         </div>
         <div
-          class="h-4/5 bg-gray-100 rounded-2xl shadow-xl flex flex-col items-center hover:scale-105 transition cursor-default"
+          class="h-fit p-3 md:p-7 bg-gray-100 rounded-2xl shadow-xl flex flex-col items-center hover:scale-105 transition cursor-default"
         >
           <div
-            class="h-1/3 w-full text-red-400 flex items-center justify-center text-8xl"
+            class="h-1/3 w-full text-red-400 flex items-center justify-center text-6xl md:text-8xl py-5"
           >
             <i class="fa-solid fa-chart-line"></i>
           </div>
@@ -147,40 +158,37 @@
     </section>
 
     <!-- Banner section -->
-    <section class="h-100 w-4/5 mx-auto gradient rounded-3xl mt-72 relative">
-      <h3 class="text-5xl text-center pt-28 text-white font-bold">
+    <section
+      class="h-100 w-4/5 mx-auto gradient rounded-3xl mt-36 md:mt-72 relative"
+    >
+      <h3 class="text-4xl md:text-5xl text-center pt-28 text-white font-bold">
         Take a guided video tour
       </h3>
       <div class="h-40 w-40 mx-auto my-10 animate-pulse">
         <img src="./assets/play-button.png" alt="" />
       </div>
-      <div class="w-1/3 absolute bottom-0">
+      <div class="w-1/2 md:w-1/3 absolute bottom-0">
         <img
           src="./assets/undraw_online_everywhere_re_n3lr.svg"
           alt=""
           class="w-full h-full object-cover"
         />
       </div>
-      <!-- <div class="w-2/3 h-4/5"></div> -->
-      <!-- <div class="w-1/3 h-4/5 absolute -top-10 right-0">
-        <img
-          src="./reading.png"
-          alt=""
-          class="w-full h-full object-cover overflow-visible"
-        />
-      </div> -->
     </section>
 
     <!-- Info section -->
     <section class="h-fit font-raleway mt-36">
       <div class="text-center mb-10 space-y-5">
-        <h2 class="text-5xl">Discover some of the benefits.</h2>
+        <h2 class="text-4xl md:text-5xl">Discover some of the benefits.</h2>
         <p class="text-lg">
           How our school management system will help students
         </p>
       </div>
-      <div class="flex justify-center">
-        <div class="flex flex-col justify-center w-2/5 h-100 space-y-8">
+
+      <div class="flex md:flex-row flex-col justify-center">
+        <div
+          class="flex flex-col justify-center items-center w-full md:w-2/5 h-100 space-y-8 text-center"
+        >
           <div class="w-1/4 h-2 bg-purple-600 rounded-full"></div>
           <h2 class="text-4xl capitalize">Personalized Learning Experience</h2>
           <p class="w-2/3 text-lg leading-8">
@@ -190,7 +198,7 @@
             take control of your education and explore topics at your own pace.
           </p>
         </div>
-        <div class="w-2/5 h-100">
+        <div class="w-full md:w-2/5 h-96 md:h-100 px-10">
           <img
             src="./assets/undraw_teaching_re_g7e3.svg"
             alt=""
@@ -199,15 +207,10 @@
         </div>
       </div>
 
-      <div class="flex py-5 justify-center">
-        <div class="py-20 pr-20 w-2/5 h-100">
-          <img
-            src="./assets/undraw_junior_soccer_6sop.svg"
-            alt=""
-            class="h-full w-full object-fill"
-          />
-        </div>
-        <div class="flex flex-col justify-center w-2/5 h-100 space-y-8">
+      <div class="flex flex-col md:flex-row-reverse justify-center">
+        <div
+          class="flex flex-col justify-center items-center w-full md:w-2/5 h-100 space-y-8 text-center"
+        >
           <div class="w-1/4 h-2 bg-purple-600 rounded-full"></div>
           <h2 class="w-2/3 text-4xl capitalize">
             Improved Organization and Time Management
@@ -218,10 +221,19 @@
             extra-curricular pursuits.
           </p>
         </div>
+        <div class="w-full md:w-2/5 h-96 md:h-100 px-10">
+          <img
+            src="./assets/undraw_junior_soccer_6sop.svg"
+            alt=""
+            class="h-full w-full object-fill"
+          />
+        </div>
       </div>
 
-      <div class="flex pt-10 justify-center">
-        <div class="flex flex-col justify-center w-2/5 h-100 space-y-8">
+      <div class="flex flex-col md:flex-row justify-center">
+        <div
+          class="flex flex-col justify-center items-center w-full md:w-2/5 h-100 space-y-8 text-center"
+        >
           <div class="w-1/4 h-2 bg-purple-600 rounded-full"></div>
 
           <h2 class="w-2/3 text-4xl capitalize">
@@ -234,7 +246,7 @@
             collaborate with classmates online.
           </p>
         </div>
-        <div class="py-20 w-2/5 h-100">
+        <div class="w-full md:w-2/5 h-96 md:h-100 px-10">
           <img
             src="./assets/undraw_mathematics_-4-otb.svg"
             alt=""
@@ -246,11 +258,11 @@
 
     <!-- Contact section -->
     <section
-      class="h-full bubble w-5/6 mx-auto mt-20 flex items-center gap-x-10"
+      class="h-full bubble w-5/6 mx-auto mt-20 flex flex-col md:flex-row items-center gap-x-10"
       id="contact"
     >
       <div
-        class="w-1/3 h-1/2 flex flex-col justify-center items-center space-y-10 border-2 border-purple-500 shadow-xl rounded-3xl"
+        class="w-full md:w-1/3 h-1/2 flex flex-col justify-center items-center space-y-10 border-2 border-purple-500 shadow-xl rounded-3xl"
       >
         <h3 class="text-4xl">Get in Touch</h3>
         <div class="flex">
@@ -272,7 +284,7 @@
           <p>Off Spine Road, Next to Al-Maktoum Academy</p>
         </div>
       </div>
-      <div class="w-2/3 h-full flex items-center">
+      <div class="w-full md:w-2/3 h-full flex items-center">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.843789621098!2d36.91134241085577!3d-1.2663905987162238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1500689579ab%3A0xaad855943b81947b!2sKaafuura%20Secondary%20School!5e0!3m2!1sen!2ske!4v1708267174052!5m2!1sen!2ske"
           width="600"
@@ -288,25 +300,13 @@
 
     <!-- Footer section -->
     <div class="footer-wave-divider"></div>
-    <footer
-      class="h-60 w-full wave-container-1 flex items-center justify-between"
-    >
-      <div
-        class="w-1/4 h-2/3 flex items-center justify-center text-2xl text-white"
-      >
-        kaafuurasecondary@gmail.com
-      </div>
-      <div class="w-1/4 h-2/3">
+    <footer class="h-48 w-full mx-auto">
+      <div class="w-full h-full">
         <img
           src="./assets/logo_KSS.png"
           alt=""
-          class="w-full h-full object-cover overflow-visible"
+          class="w-full h-full object-scale-down"
         />
-      </div>
-      <div
-        class="w-1/4 h-2/3 flex items-center justify-center text-2xl text-white"
-      >
-        +254-791-825-944
       </div>
     </footer>
   </body>
