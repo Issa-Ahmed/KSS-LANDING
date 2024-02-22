@@ -2766,6 +2766,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .wave-container {
   height: 95vh;
   background-color: #ff9a8b;
